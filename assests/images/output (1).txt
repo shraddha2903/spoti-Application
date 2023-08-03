@@ -1,0 +1,12 @@
+First non repeting char :0
+First non repeting char :0
+First non repeting char :0
+First non repeting char :0
+First non repeting char :0
+inside if block
+First non repeting char :7
+First non repeting char :7
+First non repeting char :7
+First non repeting char :7
+First non repeting char :7
+yyyyyhhhhh

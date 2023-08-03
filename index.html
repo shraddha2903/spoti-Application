@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Spoti Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="my-header">
+        <div class="left">
+            <div class="side-header">
+                <img src="./assests/images/Spotify logo.png" >
+            </div>
+            <div class=" side-div side-div-1">
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i> 
+                <span class="side-nav-text">Home</span>
+            </div>
+            <div class="side-div side-div-2">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                <span class="side-nav-text">Search</span>
+            </div>
+            <div class="side-div side-div-3">
+                <i class="fa-solid fa-lines-leaning fa-flip-horizontal" style="color: #ffffff;"></i>
+                <span class="side-nav-text">YourLibrary</span>
+            </div>
+
+            <!-- group-2 -->
+            <div class="group-2 side-div-4">
+                <i class="fa-solid fa-square-plus"></i>
+                <span class="side-nav-text">CreatePlaylist</span>
+            </div>
+            <div class="side-div side-div-5">
+                <i class="fa-sharp fa-solid fa-heart" style="color: #ffffff; background: linear-gradient(135deg, #4000F4 0%, #603AED 22.48%, #7C6EE6 46.93%, #979FE1 65.71%, #A2B3DE 77.68%, #ADC8DC 88.93%, #C0ECD7 100%);
+                padding: 3px;"></i>
+                <span class="side-nav-text like" onclick="ShowAndHide()">LikedSongs</span>
+                <span class="fed-color" style="font-size:0.8vw">(Please click here to go to 2nd page)</span>
+            </div>
+            <div class="side-div side-div-6">
+                <i class="fa-solid fa-podcast" style="color: #0ef13b;"></i>
+                <span class="side-nav-text">YourEpisodes</span>
+            </div>
+            <!-- group-3 -->
+            <div class="group-2 side-div">
+                    <p class="side-nav-text">FAV</p>
+                    <p class="side-nav-text">Daily Mix 1</p>
+                    <p class="side-nav-text">Discover Weekly</p>
+                    <p class="side-nav-text">Malayalam</p>
+                    <p class="side-nav-text">Dance/Electronix Mix</p>
+                    <p class="side-nav-text">EDM/Popular</p>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-circle-arrow-down"></i>
+                <span class="side-nav-text">Install App</span>
+            </div>
+        </div>
+        <!-- <iframe name="iframe-right">
+
+        </iframe> -->
+        <div class="right" id="default">
+            <div class="right-top">
+                <div class="angel-text">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right fed-color"></i>
+                </div>
+                <div class="top-side-btn">
+                    <img src="./assests/images/Ellipse 3.png" style="width: 3vw; height: 3vw;">
+                    <span class="angel-text">Angel</span>
+                    <i class="fa-solid fa-sort-down angel-text"></i>
+                </div>
+            </div>
+            <h3>Good Morning</h3>
+
+            <div class="card-section-1">
+                <div class="my-card">
+                    <img src="./assests/images/Group 2.png">
+                    <p>Liked Songs</p>
+                </div>
+                <div class="my-card">
+                    <img src="./assests/images/red-robo.png">
+                    <p>Neffex Playlist</p>
+                </div>
+                <div class="my-card">
+                    <img src="./assests/images/doll.png">
+                    <p>K/DA</p>
+                </div>
+                <div class="my-card">
+                    <img src="./assests/images/robo.png">
+                    <p>Dance/Electronic Mix</p>
+                </div>
+            </div>
+            <div class="suggested-section">
+                <h4>Shows you might like</h4>
+                <h6>SEE ALL</h6>
+            </div>
+            <div class="card-section-2 side-nav-text">
+                <div class="card my-card-2" style="width: 15rem;">
+                    <img src="./assests/images/artist1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Weekly Motivation</p>
+                      <p class="fed-color">Ben Ina Scott</p>
+                    </div>
+                  </div>
+                  <div class="card my-card-2" style="width: 15rem;">
+                    <img src="./assests/images/artis2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Weekly Motivation</p>
+                      <p class="fed-color">Ben Ina Scott</p>
+                    </div>
+                  </div>
+                  <div class="card my-card-2" style="width: 15rem;">
+                    <img src="./assests/images/artist1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Weekly Motivation</p>
+                      <p class="fed-color">Ben Ina Scott</p>
+                    </div>
+                  </div>
+                  <div class="card my-card-2" style="width: 15rem;">
+                    <img src="./assests/images/artis2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Weekly Motivation</p>
+                      <p class="fed-color">Ben Ina Scott</p>
+                    </div>
+                  </div>
+                  <div class="card my-card-2" style="width: 15rem;">
+                    <img src="./assests/images/artist1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Weekly Motivation</p>
+                      <p class="fed-color">Ben Ina Scott</p>
+                    </div>
+                  </div>
+                  <div class="card my-card-2" style="width: 15rem;">
+                    <img src="./assests/images/artis2.png" class="card-img-top" alt="my-card">
+                    <div class="card-body">
+                      <p class="card-text">Weekly Motivation</p>
+                      <p class="fed-color">Ben Ina Scott</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+<!--................... Second page...liked songs........... -->
+        <div class="right" id="likedSongs">
+            <div class="liked-header">
+                <div >
+                    <img src="./assests/images/스크린샷 2021-03-16 오후 4.04 2.png" class="left-img">
+                </div>
+                <div class="right-text">
+                    <div style="font-size: 1vw;">Playlist</div>
+                    <div style="font-size: 3.5vw; font-weight: 900;">Pop Right Now</div>
+                    <div style="font-size: 1vw;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quas!</div>
+                    <div style="font-size: 1vw;"><b>Spotify.</b><span>860,305 likes. 100 songs, 5 hr 5 min</span></div>
+                </div>
+            </div>
+            <div class="song-list-section">
+                <div class="song-player">
+                    <i class="fa-solid fa-circle-play fa-2xl" style="color: #20df46; margin: 10px;"></i>
+                    <i class="fa-regular fa-heart fa-xl" style="margin: 10px;"></i>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                </div>
+                <div class="title ">
+                    <div class="fed-color">#TITLE</div>
+                    <div class="fed-color">ALBUM</div>
+                    <div class="fed-color">DATE ADDED</div>
+                    <div></div>
+                </div>
+                <hr>
+                <!-- song-1 -->
+                <div class="songs song-1">
+                    <div class="songs-div1-title">
+                    <i class="fa-solid fa-play" style="margin: 10px;" ></i>
+                    <img src="./assests/images/Rectangle 9.png" style="margin: 10px;">
+                    <div style="margin: 10px; font-size: 1vw;">
+                        <div>We're Good</div>
+                        <div>Dus Lips</div>
+                    </div>
+                    </div>
+                    <div class="album">
+                        Future Nostalgia (The Moonlight Edition)
+                    </div>
+                    <div>
+                        <img src="./assests/images/date Added.png">
+                    </div>
+                    <div class="other-option">
+                    <i class="fa-regular fa-heart" style="margin: 10px;"></i>
+                    <div>2:45</div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+
+                    </div>
+                </div>
+
+                <div class="songs ">
+                    <div class="songs-div1-title">
+                    <i class="fa-solid fa-play" style="margin: 10px;" ></i>
+                    <img src="./assests/images/Rectangle 9.png" style="margin: 10px;">
+                    <div style="margin: 10px; font-size: 1vw;">
+                        <div>We're Good</div>
+                        <div>Dus Lips</div>
+                    </div>
+                    </div>
+                    <div class="album">
+                        Future Nostalgia (The Moonlight Edition)
+                    </div>
+                    <div>
+                        <img src="./assests/images/date Added.png">
+                    </div>
+                    <div class="other-option">
+                    <i class="fa-regular fa-heart" style="margin: 10px;"></i>
+                    <div>2:45</div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+
+                    </div>
+                </div>
+
+                <div class="songs ">
+                    <div class="songs-div1-title">
+                    <i class="fa-solid fa-play" style="margin: 10px;" ></i>
+                    <img src="./assests/images/Rectangle 9.png" style="margin: 10px;">
+                    <div style="margin: 10px; font-size: 1vw;">
+                        <div>We're Good</div>
+                        <div>Dus Lips</div>
+                    </div>
+                    </div>
+                    <div class="album">
+                        Future Nostalgia (The Moonlight Edition)
+                    </div>
+                    <div>
+                        <img src="./assests/images/date Added.png">
+                    </div>
+                    <div class="other-option">
+                    <i class="fa-regular fa-heart" style="margin: 10px;"></i>
+                    <div>2:45</div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+
+                    </div>
+                </div>
+
+                <div class="songs ">
+                    <div class="songs-div1-title">
+                    <i class="fa-solid fa-play" style="margin: 10px;" ></i>
+                    <img src="./assests/images/Rectangle 9.png" style="margin: 10px;">
+                    <div style="margin: 10px; font-size: 1vw;">
+                        <div>We're Good</div>
+                        <div>Dus Lips</div>
+                    </div>
+                    </div>
+                    <div class="album">
+                        Future Nostalgia (The Moonlight Edition)
+                    </div>
+                    <div>
+                        <img src="./assests/images/date Added.png">
+                    </div>
+                    <div class="other-option">
+                    <i class="fa-regular fa-heart" style="margin: 10px;"></i>
+                    <div>2:45</div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+
+                    </div>
+                </div>
+
+                <div class="songs ">
+                    <div class="songs-div1-title">
+                    <i class="fa-solid fa-play" style="margin: 10px;" ></i>
+                    <img src="./assests/images/Rectangle 9.png" style="margin: 10px;">
+                    <div style="margin: 10px; font-size: 1vw;">
+                        <div>We're Good</div>
+                        <div>Dus Lips</div>
+                    </div>
+                    </div>
+                    <div class="album">
+                        Future Nostalgia (The Moonlight Edition)
+                    </div>
+                    <div>
+                        <img src="./assests/images/date Added.png">
+                    </div>
+                    <div class="other-option">
+                    <i class="fa-regular fa-heart" style="margin: 10px;"></i>
+                    <div>2:45</div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+
+                    </div>
+                </div>
+
+                <div class="songs ">
+                    <div class="songs-div1-title">
+                    <i class="fa-solid fa-play" style="margin: 10px;" ></i>
+                    <img src="./assests/images/Rectangle 9.png" style="margin: 10px;">
+                    <div style="margin: 10px; font-size: 1vw;">
+                        <div>We're Good</div>
+                        <div>Dus Lips</div>
+                    </div>
+                    </div>
+                    <div class="album">
+                        Future Nostalgia (The Moonlight Edition)
+                    </div>
+                    <div>
+                        <img src="./assests/images/date Added.png">
+                    </div>
+                    <div class="other-option">
+                    <i class="fa-regular fa-heart" style="margin: 10px;"></i>
+                    <div>2:45</div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+
+                    </div>
+                </div>
+
+                <div class="songs ">
+                    <div class="songs-div1-title">
+                    <i class="fa-solid fa-play" style="margin: 10px;" ></i>
+                    <img src="./assests/images/Rectangle 9.png" style="margin: 10px;">
+                    <div style="margin: 10px; font-size: 1vw;">
+                        <div>We're Good</div>
+                        <div>Dus Lips</div>
+                    </div>
+                    </div>
+                    <div class="album">
+                        Future Nostalgia (The Moonlight Edition)
+                    </div>
+                    <div>
+                        <img src="./assests/images/date Added.png">
+                    </div>
+                    <div class="other-option">
+                    <i class="fa-regular fa-heart" style="margin: 10px;"></i>
+                    <div>2:45</div>
+                    <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+  </div>
+    <div class="footer">
+        <img src="./assests/images/Artist , title section.png">
+        <img src="./assests/images/Music Player Options.png">
+        <img src="./assests/images/Right options.png">
+    </div>
+    
+    
+<script>
+    function ShowAndHide() {
+    var x = document.getElementById('likedSongs');
+    var y=document.getElementById('default');
+    if (x.style.display == 'none') {
+        y.style.display='none';
+        x.style.display = 'block';    
+    } else {
+        x.style.display = 'none';
+        y.style.display='block';
+    }
+}
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
